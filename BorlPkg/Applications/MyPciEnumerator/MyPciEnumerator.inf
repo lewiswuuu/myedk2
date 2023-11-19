@@ -1,0 +1,18 @@
+[Defines]
+    INF_VERSION = 0x00010005
+    VERSION_STRING = 0.1
+    BASE_NAME = MyPciEnumerator
+    FILE_GUID = 3c8d5a86-f16b-4142-8ff2-47d98e3c1f90
+    MODULE_TYPE = UEFI_APPLICATION
+    ENTRY_POINT = UefiMain
+
+[Sources]
+    MyPciEnumerator.c
+
+[LibraryClasses]
+    IoLib
+    UefiLib
+    UefiApplicationEntryPoint
+
+[Packages]
+    MdePkg/MdePkg.dec

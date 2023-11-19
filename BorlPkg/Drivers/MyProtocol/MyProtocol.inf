@@ -1,0 +1,24 @@
+[Defines]
+    INF_VERSION = 0x00010006
+    MODULE_TYPE = UEFI_DRIVER
+    ENTRY_POINT = MyProtocolEntry
+    BASE_NAME = MyProtocol
+    VERSION_STRING = 0.1
+    FIEL_GUID = 1e25d63f-3957-48df-85de-100291ac19aa
+
+[Sources]
+    MyProtocol.c
+
+[Packages]
+    MdePkg/MdePkg.dec
+    MdeModulePkg/MdeModulePkg.dec
+    BorlPkg/BorlPkg.dec
+
+[LibraryClasses]
+    UefiLib
+    UefiDriverEntryPoint
+    UefiBootServicesTableLib
+    MemoryAllocationLib
+
+[Protocols]
+    gEfiCompareProtocolGuid

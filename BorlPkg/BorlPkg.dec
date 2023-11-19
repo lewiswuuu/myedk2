@@ -1,0 +1,9 @@
+[Defines]
+    DEC_SPECIFICATION = 0x00010005
+    PACKAGE_NAME = BorlPkg
+    PACKAGE_GUID = 850a3dda-f672-439a-abba-77777203c3f7
+    PACKAGE_VERSION = 0.01
+
+
+[Protocols]
+    gEfiCompareProtocolGuid = { 0xc6e4e42a, 0x4858, 0x4f03, {0xa3, 0xad, 0x22, 0xed, 0xb5, 0x22, 0x14, 0xc2 } }
